@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    <main>
+        <section class="conteudo">
+            <h1>Decodificador de Texto</h1> 
+    
+            <textarea class="conteudo__texto" type="text" id="conteudo__texto" name="texto-digitado" autofocus placeholder="Digite seu texto para ser criptografado"></textarea>
+
+            <p class="conteudo__aviso"> Apenas letras minúsculas, sem acento e sem caracteres especiais.</p>
+
+            <div class="conteudo__botoes">
+                <button type="button" class="conteudo__botoes__botao botao-criptografar" onclick="criptografar()">Criptografar</button>
+                <button type="button" class="conteudo__botoes__botao botao-descriptografar" onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="retorno">
+            <div class="retorno__retorno-cheio">
+                <textarea class="retorno__retorno-cheio__texto" id="texto-retorno" rows="13" cols="30"></textarea>
+                <button type="button" class="retorno__retorno-cheio__botao" onclick="copiarTexto()">Copiar</button>
+            </div>
+    
+            <div class="retorno__retorno-vazio">
+                <img class="retorno__retorno-vazio__imagem" src="./assets/images/placeholder.png   " alt="placeholder">
+                <h2 class="retorno__retorno-vazio__titulo">Nenhuma mensagem encontrada</h2>
+                <p class="retorno__retorno-vazio__informacao">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape__texto">Feito por Thiago Terence</p>
+    </footer>
+
+    <script src="./assets/main.js"></script>
+</body>
+</html>
